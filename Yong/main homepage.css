@@ -92,3 +92,25 @@ font-size: 16px;
   font-size: 20px;
 }
 
+footer{
+  padding: 16px 0px 16px 0px;
+  margin: 24px 0px 24px 0px;
+}
+
+.ft{
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+}
+
+.nav-item1{
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+
+}
+
+.ftb{
+  text-align: center;
+}
