@@ -1,0 +1,96 @@
+
+body {
+  margin: 0% auto;
+  font-family: "Source Sans Pro", sans-serif;
+  width: 1130px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.navbar {
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 5px 0px 5px 0px;
+  width: auto;
+  text-align: center;
+  height: 0% auto ;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.navbar__logo{
+  list-style: none;
+  float: right;
+  position: flex;
+  padding: 0px 200px 0px 100px ;
+}
+
+.navbar__menu {
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+} 
+
+.navbar__menu li {
+display: inline-block;
+padding: 20px;
+font-size: 16px;
+}
+
+.navbar_loginsignin{
+  position: relative;
+  list-style: none;
+  margin: 0%;
+  padding: 20px 30px 20px 30px;
+  left: 150px;
+
+}
+.navbar_loginsignin li {
+  padding: 0px 10px;
+  list-style: none;
+  float: left;
+}
+
+.search {
+  width: 593PX; 
+  display: flex;
+  position: relative;
+  padding: 10px 268.5px 5px 268.5px ;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 2px solid black;
+  border-right: none;
+  padding: 5px 20px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #F6F7F8;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 40px;
+  height: 34px;
+  border: 1px solid black;
+  background: black;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
