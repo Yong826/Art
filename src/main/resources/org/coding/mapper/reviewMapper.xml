@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.coding.mapper.reviewMapper">
+	
+	<insert id="write">
+		<!-- insert 하기 전에 select 먼저 실행해라 (bno값을 먼저 가져와라) -->
+  		<selectKey keyProperty="bno" order="BEFORE" resultType="int">
+  			select max(bno)+1 bno from board
+  		</selectKey>
+		
+		insert into board(title, content, id)
+		values(#{title},#{content},#{id})
+	</insert>
+
+	<select id="list" resultType="org.coding.model.BoardVO">
+		select *
+		from(
+			select @rownum:=@rownum+1 rownum, b.* 
+    		from board b, (select @rownum:=0) as tmp    		
+    		<if test="keyword != null" >    			
+    			where title like concat('%',#{keyword},'%')
+    			OR content like concat('%',#{keyword},'%')		
+    		</if>
+    		order by bno desc
+		) as boardlist
+		<![CDATA[
+		where rownum > (#{pageNum}-1)*#{amount} and rownum <= #{pageNum}*#{amount}
+		]]>
+	</select>
+	
+	<select id="detail" resultType="org.coding.model.BoardVO">
+		select * from board where bno = #{bno}
+	</select>
+	
+	<update id="modify">
+		update board set title=#{title}, content=#{content} where bno = #{bno}
+	</update>
+	
+	<delete id="remove">
+		delete from board where bno = #{bno}
+	</delete>
+	
+	<select id="total" resultType="int">
+  		select count(*) from board
+  		<if test="keyword != null" >  			  
+    		where title like concat('%',#{keyword},'%')
+    		OR content like concat('%',#{keyword},'%')		
+    	</if>
+  	</select>
+  	
+  	<!-- 조회수 올리기 -->
+	<update id="count">
+		update board set cnt = cnt + 1 where bno = #{bno}
+	</update>
+</mapper>
