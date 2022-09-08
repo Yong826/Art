@@ -1,14 +1,23 @@
 @charset "UTF-8";
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 #list_container{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+<<<<<<< HEAD
 .search {
 	margin-bottom:50px;
 }
+=======
+
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 
 h1 {
 	margin-bottom:50px;
@@ -49,6 +58,7 @@ th {
 	background-color:black;
 	color:white;
 	border:none;
+<<<<<<< HEAD
 }
 
 #btn {
@@ -58,10 +68,15 @@ th {
 	margin-left: 64px;
 	align-items: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 #page a:hover {
 	color:rgb(153,153,153);
 =======
 >>>>>>> 38dbd94c68f007827ea503873151565d50af3293
+=======
+=======
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
+>>>>>>> cbfea04238a0e492e553610705d50c45d4b7fd13
 }

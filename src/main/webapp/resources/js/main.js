@@ -1,5 +1,17 @@
 
 // 더블텝 메뉴
+<<<<<<< HEAD
+=======
+function searchFunction(){
+		var addr = "https://www.google.com/search?q=";
+		var txt = document.getElementById("googleinput").value;
+		var openNewWindow = window.open("about:blank");
+		
+		openNewWindow.location.href = addr.concat(txt);
+	}
+
+
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 $(function () {
     $('.tabcontent > div').hide();
     $('.tabnav a').click(function () {
@@ -65,7 +77,47 @@ $(function () {
         })
     }
     buildCalendar();
+<<<<<<< HEAD
 
 
 })
 
+=======
+})
+
+//메인화면에서 관심없는 게시글 안보이게 하는 버튼 구현
+$(function () {
+	$("input[class=outcardimage]").click(function(){
+		  
+		$(this).closest(".list").hide();
+		 		
+	})
+})
+
+// 실시간 게시글 url 주소 복사 버튼 구현
+$(function(){
+$('input[class=morecardimage]').click(function() {
+
+    // 화면에서 hidden 처리한 input box type을 text로 일시 변환
+    $(this).next('#data-area').attr('type', 'text');
+    
+    // input에 담긴 데이터를 선택
+    $(this).next("#data-area").select();
+    
+
+    //  clipboard에 데이터 복사
+    var copy = document.execCommand('copy');
+    
+   // input box를 다시 hidden 처리
+    $(this).next('#data-area').attr('type', 'hidden');
+    
+    // 사용자 알림
+    if(copy) {
+    	alert("데이터가 복사되었습니다.");
+    }
+})
+})
+
+
+
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87

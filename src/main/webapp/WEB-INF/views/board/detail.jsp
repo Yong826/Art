@@ -17,6 +17,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<<<<<<< HEAD
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,10 +44,18 @@
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="/resources/js/reply.js"></script>
+=======
+<%@ include file="../header.jsp"%>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resources/js/reply.js"></script>
+<link rel="stylesheet" href="<c:url value='/resources/css/detail.css'/>">
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 
 </head>
 <body>
 
+<<<<<<< HEAD
   <div class="header">
     <div class="navbar">
 
@@ -84,6 +93,8 @@
 
     </div>
 
+=======
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 <h1 style="text-align: center;">상세보기</h1>
 >>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 <div id = "detail_container">
@@ -153,8 +164,17 @@
     	<input type = "button" id="tolist" style="float: right;" onclick="location.href='http://localhost:8080/board/list'" value="목록으로">
 =======
     		<input type = "button" id="tolist" style="float: right;" onclick="location.href='http://localhost:8080/board/list'" value="목록으로">
+<<<<<<< HEAD
     		<input type = "button" id="modify" style="float: right;" onclick="location.href='/board/modify?bno=${detail.bno}'" value="수정하기">
+<<<<<<< HEAD
 >>>>>>> 38dbd94c68f007827ea503873151565d50af3293
+=======
+=======
+    		<c:if test="${sessionScope.login.id != null}">
+    		<input type = "button" id="modify" style="float: right;" onclick="location.href='/board/modify?bno=${detail.bno}'" value="수정하기">
+    		</c:if>
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
+>>>>>>> cbfea04238a0e492e553610705d50c45d4b7fd13
     </div>
 </form>
 </div>

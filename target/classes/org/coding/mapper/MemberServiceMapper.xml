@@ -4,18 +4,31 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   <mapper namespace="org.coding.mapper.MemberServiceMapper">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   <!-- 회원가입 -->
 >>>>>>> 38dbd94c68f007827ea503873151565d50af3293
+=======
+  <!-- 회원가입 -->
+=======
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
+>>>>>>> cbfea04238a0e492e553610705d50c45d4b7fd13
   	<insert id="memberjoin">
   		insert into member (id, name , password, email)
   		values(#{id},#{name},#{password},#{email})
   	</insert>
 <<<<<<< HEAD
+<<<<<<< HEAD
   	
 =======
   <!-- 로그인 -->
 >>>>>>> 38dbd94c68f007827ea503873151565d50af3293
+=======
+  <!-- 로그인 -->
+=======
+  	
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
+>>>>>>> cbfea04238a0e492e553610705d50c45d4b7fd13
   	<select id="login" resultType="org.coding.model.MemberVo">
   			select *
   			from member
@@ -24,8 +37,11 @@
   
   	</select>
 <<<<<<< HEAD
+<<<<<<< HEAD
   	
 =======
+=======
+>>>>>>> cbfea04238a0e492e553610705d50c45d4b7fd13
   	<!-- 회원정보 수정 -->
   	<update id="memberUpdate">
   			update member
@@ -33,5 +49,11 @@
   			email = #{email}
   			where id = #{id}
   	</update>
+<<<<<<< HEAD
 >>>>>>> 38dbd94c68f007827ea503873151565d50af3293
+=======
+=======
+  	
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
+>>>>>>> cbfea04238a0e492e553610705d50c45d4b7fd13
   </mapper>

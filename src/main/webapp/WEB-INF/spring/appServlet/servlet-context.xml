@@ -28,7 +28,13 @@
 	</beans:bean>
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	<context:component-scan base-package="org.coding.mapper" />
 >>>>>>> 38dbd94c68f007827ea503873151565d50af3293
+=======
+	<context:component-scan base-package="org.coding.mapper" />
+=======
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
+>>>>>>> cbfea04238a0e492e553610705d50c45d4b7fd13
 </beans:beans>
