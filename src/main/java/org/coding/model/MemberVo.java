@@ -17,9 +17,13 @@ public class MemberVo {
 	private String email;
 	
 	
+<<<<<<< HEAD
 	private String profile;
 	
 	
+=======
+
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 	public String getId() {
 		return id;
 	}
@@ -51,6 +55,7 @@ public class MemberVo {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+<<<<<<< HEAD
 	
 	
 	public String getProfile() {
@@ -68,6 +73,13 @@ public class MemberVo {
 	}
 
 	
+=======
+
+	@Override
+	public String toString() {
+		return "MemberVo [id=" + id + ", password=" + password + ", name=" + name + ", email=" + email + "]";
+	}
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 	
 	
 }

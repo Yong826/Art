@@ -11,6 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <title>게시글</title>
+<<<<<<< HEAD
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- 폰트 킷 주소입니다 -->
@@ -36,10 +37,18 @@
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="/resources/js/list.js"></script>
+=======
+<%@ include file="../header.jsp"%>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/resources/js/list.js"></script>
+<link rel="stylesheet" href="<c:url value='/resources/css/list.css'/>">
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 
 </head>
 <body>
 
+<<<<<<< HEAD
   <div class="header">
     <div class="navbar">
 
@@ -77,6 +86,8 @@
 
     </div>
 
+=======
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 
 <form id="searchForm" action="/board/list" method="get">
 <div class="search">

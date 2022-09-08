@@ -27,7 +27,11 @@
 		
 		<multipart-config>
 			<!-- 파일 업로드 경로 -->
+<<<<<<< HEAD
 			<location>D:\\01-STUDY\\upload</location>
+=======
+			<location>D:\\upload</location>
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 			<!-- 파일 최대 크기 : 20MB -->
 			<max-file-size>20971520</max-file-size>
 			<!-- 한꺼번에 올릴 수 있는 최대 크기 : 40MB -->
@@ -42,18 +46,31 @@
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+<<<<<<< HEAD
 	 	
 	 	<filter> 
+=======
+	
+	 <filter> 
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
       <filter-name>encoding</filter-name> 
       <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class> 
       <init-param> 
          <param-name>encoding</param-name> 
          <param-value>UTF-8</param-value>
       </init-param> 
+<<<<<<< HEAD
   		 </filter>
   		 <filter-mapping> 
       <filter-name>encoding</filter-name> 
       <servlet-name>appServlet</servlet-name>
    		</filter-mapping>
 
+=======
+   </filter>
+   <filter-mapping> 
+      <filter-name>encoding</filter-name> 
+      <servlet-name>appServlet</servlet-name>
+   </filter-mapping>
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 </web-app>

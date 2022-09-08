@@ -28,6 +28,9 @@
 	
 	<mybatis-spring:scan base-package="org.coding.mapper"/>
 	<context:component-scan base-package="org.coding.service" />
+<<<<<<< HEAD
 	<context:component-scan base-package="org.coding.mypageMapper"/>
+=======
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 	
 </beans>

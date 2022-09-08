@@ -6,6 +6,7 @@
     request.setCharacterEncoding("UTF-8");
  
 %>
+<<<<<<< HEAD
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
@@ -71,6 +72,19 @@
     </div>
 
 
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시글</title>
+<%@ include file="../header.jsp"%>
+
+  <link rel="stylesheet" href="<c:url value='/resources/css/write.css'/>">
+</head>
+<body>
+
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 <br><br><h2 style="text-align: center;">글 작성</h2><br><br>
 
 <div class="write_container">
@@ -83,9 +97,13 @@
         <div class="form-group">
         	<textarea name = "content" rows="30" placeholder="내용을 입력해주세요." id="content"></textarea>
         </div>
+<<<<<<< HEAD
         
 		<input type="hidden" name="id" value="${sessionScope.login.id}">
 		
+=======
+
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
     	<div class="form-group">
     		<input type = "submit" id="write" style="float: right;" value="작성 완료">
     	</div>

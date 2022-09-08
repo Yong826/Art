@@ -12,6 +12,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<<<<<<< HEAD
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- 폰트 킷 주소입니다 -->
@@ -75,6 +76,13 @@
 
     </div>
 
+=======
+<%@ include file="../header.jsp"%>
+<link rel="stylesheet" href="<c:url value='/resources/css/detail.css'/>">
+</head>
+<body>
+
+>>>>>>> 87ab3ca4e692b10796f63c12a7e486e2a68ada87
 <h1 style="text-align: center;">수정하기</h1>
 <div id = "detail_container">
 <form method="post">
