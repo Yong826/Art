@@ -17,7 +17,13 @@ public class MemberVo {
 	private String email;
 	
 	
+<<<<<<< HEAD
 
+=======
+	private String profile;
+	
+	
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 	public String getId() {
 		return id;
 	}
@@ -49,11 +55,31 @@ public class MemberVo {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+<<<<<<< HEAD
 
 	@Override
 	public String toString() {
 		return "MemberVo [id=" + id + ", password=" + password + ", name=" + name + ", email=" + email + "]";
 	}
+=======
+	
+	
+	public String getProfile() {
+		return profile;
+	}
+
+	public void setProfile(String profile) {
+		this.profile = profile;
+	}
+
+	@Override
+	public String toString() {
+		return "MemberVo [id=" + id + ", password=" + password + ", name=" + name + ", email=" + email + ", profile="
+				+ profile + "]";
+	}
+
+	
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 	
 	
 }

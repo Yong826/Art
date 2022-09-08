@@ -6,8 +6,11 @@ import java.util.List;
 import org.coding.mapper.reviewMapper;
 import org.coding.model.BoardVO;
 import org.coding.model.CriteriaVO;
+<<<<<<< HEAD
 import org.coding.model.AttachVO;
 import org.coding.mapper.AttachMapper;
+=======
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,8 +19,11 @@ import org.springframework.stereotype.Service;
 	
 	@Autowired
 	reviewMapper bm;
+<<<<<<< HEAD
 	@Autowired
 	AttachMapper am;
+=======
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 	
 	// BoardService 에서 설계되어진 write 추상메서드를 구현
 	public void write(BoardVO board) {
@@ -25,6 +31,7 @@ import org.springframework.stereotype.Service;
 		// 메서드의 매개변수를 통해 BoardVO 값을
 		// BoardMapper의 write 메서드로 전달
 		bm.write(board);
+<<<<<<< HEAD
 		
 		board.getAttach().forEach(attach->{
 			
@@ -32,6 +39,8 @@ import org.springframework.stereotype.Service;
 			attach.setBno(board.getBno());
 			am.attach(attach);				
 		});
+=======
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 	}
 	
 
@@ -61,6 +70,7 @@ import org.springframework.stereotype.Service;
 		return bm.total(cri);
 	}
 
+<<<<<<< HEAD
 	// BoardService에서 설계되어진 attachlist 추상메서드를 구현
 	public ArrayList<AttachVO> attachlist(int bno){
 		return am.attachlist(bno);
@@ -70,4 +80,6 @@ import org.springframework.stereotype.Service;
 	public int count(BoardVO board) {
 		return bm.count(board);
 	}
+=======
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 }

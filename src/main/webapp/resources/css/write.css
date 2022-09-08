@@ -6,16 +6,22 @@
 	align-items: center;
 }
 
+<<<<<<< HEAD
 h2 {
 	margin-top:50px;
 	margin-bottom:50px;
 }
 
 #totolist,#write {
+=======
+#write {
+	margin-top:15px;
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 	padding:8px 50px 8px 50px;
 	background-color:black;
 	color:white;
 	border:none;
+<<<<<<< HEAD
 	margin-left:15px;
 	margin-bottom:15px;
 	float:right;
@@ -23,6 +29,8 @@ h2 {
 
 .write {
 	margin-bottom:15px;
+=======
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 }
 
 #title {
@@ -39,6 +47,7 @@ h2 {
 	padding: 6px 10px;
 	border: solid 1px rgb(209,209,209);
 	text-color: rgb(209,209,209);
+<<<<<<< HEAD
 }
 
 #title:focus {
@@ -51,4 +60,7 @@ h2 {
 	outline: none;
 	border-color: rgb(83,161,225); 
 	box-shadow: 0 0 7px rgb(83,161,225);
+=======
+	margin-top: 15px;
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 }

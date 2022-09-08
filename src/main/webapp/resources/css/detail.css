@@ -6,8 +6,16 @@
 	align-items: center;
 }
 
+<<<<<<< HEAD
 h2 {
 	margin-top:50px;
+=======
+.search {
+	margin-bottom:50px;
+}
+
+h1 {
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 	margin-bottom:50px;
 }
 
@@ -18,19 +26,31 @@ h2 {
 	border-top-width: 2px;
 }
 
+<<<<<<< HEAD
 .detail th,td {
+=======
+th, td {
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 	padding: 8px;
 	border-left: hidden;
 	border-right: hidden;
 
 }
 
+<<<<<<< HEAD
 .detail th {
+=======
+th {
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 	background-color: #EBEBEB;
 }
 
 .content {
+<<<<<<< HEAD
 	height: 400px;
+=======
+	height: 500px;
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 }
 
 #tolist,#modify {
@@ -40,7 +60,10 @@ h2 {
 	color:white;
 	border:none;
 	margin-left:15px;
+<<<<<<< HEAD
 	margin-bottom:15px;
+=======
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 }
 
 #reply_container {
@@ -67,6 +90,10 @@ h2 {
 
 #remo {
 	margin-left:10px;
+<<<<<<< HEAD
+=======
+	border-right:solid 1px black;
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 }
 
 #remo,#rere {
@@ -74,6 +101,7 @@ h2 {
 	background-color:white;
 }
 
+<<<<<<< HEAD
 #remo:hover {
 	color:blue;
 }
@@ -169,3 +197,8 @@ h2 {
 }
 
 
+=======
+#replyUL li {
+	margin-bottom:10px;
+}
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293

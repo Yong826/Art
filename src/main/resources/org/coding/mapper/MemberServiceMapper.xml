@@ -3,11 +3,19 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   <mapper namespace="org.coding.mapper.MemberServiceMapper">
+<<<<<<< HEAD
+=======
+  <!-- 회원가입 -->
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
   	<insert id="memberjoin">
   		insert into member (id, name , password, email)
   		values(#{id},#{name},#{password},#{email})
   	</insert>
+<<<<<<< HEAD
   	
+=======
+  <!-- 로그인 -->
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
   	<select id="login" resultType="org.coding.model.MemberVo">
   			select *
   			from member
@@ -15,5 +23,15 @@
   			and password=#{password}	
   
   	</select>
+<<<<<<< HEAD
   	
+=======
+  	<!-- 회원정보 수정 -->
+  	<update id="memberUpdate">
+  			update member
+  			set password = #{password},
+  			email = #{email}
+  			where id = #{id}
+  	</update>
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
   </mapper>

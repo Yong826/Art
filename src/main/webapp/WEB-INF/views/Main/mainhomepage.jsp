@@ -52,7 +52,11 @@
 		
 		<c:choose>
 			<c:when test = "${sessionScope.login==null}">
+<<<<<<< HEAD
 				<a href="login">로그인</a>
+=======
+				<a href="login">로그인</a><br>
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 				<a href="join">회원가입</a>
 			</c:when>
 			
@@ -62,6 +66,7 @@
 			<c:otherwise>
 				${sessionScope.login.id}님 환영합니다. <br>
 				<a href="logout">로그아웃</a>
+<<<<<<< HEAD
 			</c:otherwise>	
 		</c:choose>      
 		
@@ -69,6 +74,12 @@
       	
     	
   
+=======
+				<a href="mypage">마이페이지</a>
+			</c:otherwise>	
+		</c:choose>      
+	 
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
       </div>
 
     </div>

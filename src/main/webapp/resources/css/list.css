@@ -20,7 +20,11 @@ h1 {
 }
 
 
+<<<<<<< HEAD
 #list th, td {
+=======
+th, td {
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 	padding: 8px;
 	text-align: center;
     border-bottom: 1px solid #ddd;
@@ -53,8 +57,11 @@ th {
 	justify-content: right;
 	margin-left: 64px;
 	align-items: center;
+<<<<<<< HEAD
 }
 
 #page a:hover {
 	color:rgb(153,153,153);
+=======
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 }

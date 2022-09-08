@@ -1,0 +1,135 @@
+* {
+    text-decoration:none!important;
+}
+
+body {
+    margin: 0% auto;
+    font-family: "Source Sans Pro", sans-serif;
+    /*  width: ;*/
+}
+
+
+.navbar {
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5px 0px 5px 0px;
+    width: auto;
+    text-align: center;
+    height: 0% auto;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.navbar * {
+    color: #000000 !important;
+}
+
+.navbar__logo {
+    list-style: none;
+    float: right;
+    position: flex;
+    padding: 0px 50px 0px 50px;
+}
+
+.navbar__menu {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    left: 50%;
+}
+
+.navbar__menu li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.navbar_loginsignin {
+    position: relative;
+    list-style: none;
+    margin: 0%;
+    padding: 20px 30px 20px 30px;
+}
+
+.navbar_loginsignin li {
+    padding: 0px 10px;
+    list-style: none;
+    float: left;
+}
+
+.customCon {
+    padding-left: 65px!important;
+}
+
+@media (max-width: 1400px) {
+    .customCon {
+        padding-left: calc(var(--bs-gutter-x) * .5)!important;
+    }
+}
+
+footer {
+    padding: 16px 0px 16px 0px;
+    margin: 24px 0px 24px 0px;
+}
+
+.row{
+    width: 70%;
+    float : left;
+    box-sizing: border-box;
+    display: flex;
+}
+.right{
+    width: 30%;
+    
+    box-sizing:border-box;
+}
+.boardin{
+    flex:1;
+}
+
+.btn1{
+    float:right;
+    margin-top:15px;
+}
+
+.col-md-4{
+    position: ;
+    width:500px;
+    height:200px;
+    -webkit-transition: opacity 1s ease-in-out;
+    
+}
+.p-5 {
+    display : flex;
+ }
+.box {
+    width: 150px;
+    height: 150px; 
+    border-radius: 70%;
+    margin-left:50px;
+}
+.py-5{
+    display: flex;
+}
+    
+.boardin{
+   
+}
+footer{
+    margin:20px;
+}
+.list-group{
+    float:right;
+    width:225px
+}
+.allcard{
+	display :flex;
+	align-items: flex-start;
+	justify-content:space-between; 
+}
+.card1{
+	margin :5px;
+}

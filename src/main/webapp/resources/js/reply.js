@@ -6,7 +6,11 @@ $(document).ready(function(){
 	// 함수 호출
 	// 1. detail.jsp가 시작되자마자 bno값을 가져올려면 $(document).ready 아래에 선언
 	var bnoVal=$("input[name='bno']").val();
+<<<<<<< HEAD
 	 //alert(bnoVal) // bno값 가져오는지 테스트
+=======
+	// alert(bno) // bno값 가져오는지 테스트
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 	
 	// 2. detail.jsp가 시작되자마자 댓글목록리스트(list) 함수를 호출
 	list(bnoVal);  // list는 bno값 필요

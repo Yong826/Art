@@ -1,6 +1,7 @@
 package org.coding.controller;
 
 import java.io.File;
+<<<<<<< HEAD
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -17,10 +18,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
+=======
+
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 
+<<<<<<< HEAD
 import net.coobird.thumbnailator.Thumbnailator;
 
 @Controller
@@ -193,4 +198,34 @@ public class UploadController {
 		return new ResponseEntity<>(resource,headers,HttpStatus.OK);		
 	}  // downloadFile 메서드 끝
 
+=======
+public class UploadController {
+	
+	@RequestMapping(value ="/uploadAjax", method = RequestMethod.GET)
+	public void uploadAjax() {
+		
+	}
+	@RequestMapping(value ="/mypage2", method = RequestMethod.POST)
+	public void uploadAjaxPost(MultipartFile[] uploadFile) {
+		String uploadFolder="C:\\upload";
+		
+		for(MultipartFile multipartFile : uploadFile) {
+			
+			System.out.println(multipartFile.getOriginalFilename());
+			System.out.println(multipartFile.getSize());
+			
+			
+			File saveFile = new File(uploadFolder, multipartFile.getOriginalFilename());
+			
+			try {
+				
+				multipartFile.transferTo(saveFile);
+			} catch(Exception e) {
+				
+				System.out.println(e.getMessage());
+				
+			} // catch
+		} // for
+	}
+>>>>>>> 38dbd94c68f007827ea503873151565d50af3293
 }
