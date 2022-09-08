@@ -1,0 +1,160 @@
+body {               
+  margin: 0% auto;
+  font-family: "Source Sans Pro", sans-serif;
+  width: 1130px;
+  height: auto;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#li {
+  padding: 2px 2px 2px 2px;
+  width: 80px;
+  height: 20px;
+  text-align: center;
+
+}
+
+@keyframes blink-effect {
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.blink {
+  animation: blink-effect 0.4s step-end infinite;
+
+}
+
+#li:after {
+  /*after 가상요소*/
+  display: block;
+  /*a요소를 블록 요소라고 선언*/
+  width: 100%;
+  /*카테고리 메뉴 밑줄의 크기를 동일하게 주기 위해 width 설정*/
+  /*혹시 동일하지 않길 바란다면 width 삭제*/
+  content: '';
+  border-bottom: solid 1px rgb(0, 0, 0);
+  transform: scaleX(0);
+  /*크기를 0으로 줌으로써 평상시엔 밑줄 없음*/
+  transition: transform 250ms ease-in-out;
+  /*변형 방식*/
+  margin-top: 3px;
+}
+
+#li:hover:after {
+  transform: scaleX(1);
+  /*a 속성에 hover시 기존 크기로*/
+}
+
+.header {
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+}
+
+
+.navbar {
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 5px 0px 5px 0px;
+  width: auto;
+  height: 0% auto;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+  height: 70px;
+
+}
+
+.navbar__logo {
+  list-style: none;
+  float: right;
+  position: flex;
+  padding: 0px 100px 0px 100px;
+}
+
+.navbar__menu {
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+}
+
+.navbar__menu li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.navbar_loginsignin {
+  position: relative;
+  list-style: none;
+  margin: 0%;
+  padding: 20px 30px 20px 30px;
+  left: 150px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#ul {
+  padding-left: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.navbar_loginsignin li {
+  padding: 0px 10px;
+  list-style: none;
+  float: left;
+  margin: 0px;
+}
+
+.search {
+  width: 593PX;
+  display: flex;
+  position: relative;
+  padding: 7px 268.5px 7px 268.5px;
+  border-bottom: 1px solid #dee2e6;
+  background: white;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 2px solid black;
+  border-right: none;
+  padding: 5px 20px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #F6F7F8;
+}
+
+.searchTerm:focus {
+  color: black;
+}
+
+.searchButton {
+  width: 40px;
+  height: 34px;
+  border: 1px solid black;
+  background: black;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.write_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#write {
+	margin-top:15px;
+	padding:8px 50px 8px 50px;
+	background-color:black;
+	color:white;
+	border:none;
+}
+
+#title {
+	width: 1000px;
+	border-radius: 5px;
+	padding: 6px 10px;
+	border: solid 1px rgb(209,209,209);
+	text-color: rgb(209,209,209)
+}
+
+#content {
+	width: 1000px;
+	border-radius: 5px;
+	padding: 6px 10px;
+	border: solid 1px rgb(209,209,209);
+	text-color: rgb(209,209,209);
+	margin-top: 15px;
+}
