@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+
+#list_container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+h1 {
+	margin-bottom:50px;
+}
+
+#list {
+	border-collapse: collapse;
+	width: 1000px;
+}
+
+
+th, td {
+	padding: 8px;
+	text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-left: hidden;
+	border-right: hidden;
+}
+
+th {
+	border-top:1px solid #ddd;
+	background-color: #ddd;
+}
+
+.tbody:hover {background-color: #F6F6F6;}
+
+.title {
+	width:400px;
+}
+
+#towrite {
+	margin-top:15px;
+	padding:8px 50px 8px 50px;
+	background-color:black;
+	color:white;
+	border:none;
+}
